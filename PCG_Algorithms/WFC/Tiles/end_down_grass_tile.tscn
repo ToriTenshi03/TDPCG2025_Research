@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwe1ragmc88kh"]
+
+[ext_resource type="PackedScene" uid="uid://cm8ugxv22n1oy" path="res://PCG_Algorithms/WFC/Tiles/end_up_grass_tile.tscn" id="1_3wv35"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3wv35"]
+load_path = "res://.godot/imported/TestResearch32.png-171d9edbba337e8005ec39ece8d70881.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31v23"]
+atlas = SubResource("CompressedTexture2D_3wv35")
+region = Rect2(192, 128, 32, 32)
+
+[node name="end_down_grass_tile" instance=ExtResource("1_3wv35")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = SubResource("AtlasTexture_31v23")
