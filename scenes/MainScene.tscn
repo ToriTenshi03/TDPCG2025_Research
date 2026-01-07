@@ -85,8 +85,8 @@ scenes/2/scene = ExtResource("3_x537r")
 scenes/3/scene = ExtResource("4_cfq0f")
 scenes/4/scene = ExtResource("5_pjux3")
 scenes/5/scene = ExtResource("3_c6dvc")
-scenes/7/scene = ExtResource("7_o3jky")
-scenes/8/scene = ExtResource("8_cfq0f")
+scenes/6/scene = ExtResource("7_o3jky")
+scenes/7/scene = ExtResource("8_cfq0f")
 
 [sub_resource type="TileSet" id="TileSet_c6dvc"]
 tile_size = Vector2i(32, 32)
