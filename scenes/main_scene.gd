@@ -4,8 +4,8 @@ extends TileMapLayer
 @export_category("User Inputs")
 @export var isInteractable:bool = false
 
-@export_category("Grid Settings")
-@export var griz_size:Vector2i = Vector2i(10,10)
+@export_category("PCG Algorithms")
+@export var WFC:Node
 
 var IDCounter:int = 1
 var maxIDCounter:int = -1
@@ -20,6 +20,11 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventKey:
 		if event.keycode == KEY_B and event.pressed:
 			isInteractable = !isInteractable
+		
+		if event.keycode == KEY_ENTER and event.pressed:
+			WFC.start_wfc()
+			
+			
 
 	if !isInteractable:
 		return
