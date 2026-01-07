@@ -107,7 +107,7 @@ sources/1 = SubResource("TileSetScenesCollectionSource_c6dvc")
 [node name="WFC" type="Node" parent="." node_paths=PackedStringArray("world_layer")]
 script = ExtResource("15_0cxu4")
 world_layer = NodePath("../MainWorld")
-grid_size = Vector2i(20, 50)
+grid_size = Vector2i(50, 10)
 
 [node name="MainWorld" type="TileMapLayer" parent="." node_paths=PackedStringArray("WFC")]
 texture_filter = 1
