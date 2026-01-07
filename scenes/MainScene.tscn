@@ -107,12 +107,12 @@ sources/1 = SubResource("TileSetScenesCollectionSource_c6dvc")
 texture_filter = 1
 tile_set = SubResource("TileSet_c6dvc")
 script = ExtResource("4_611at")
+isInteractable = true
 
-[node name="PreviewLayer" type="TileMapLayer" parent="." node_paths=PackedStringArray("WorldLayerData")]
+[node name="PreviewLayer" type="TileMapLayer" parent="."]
 texture_filter = 1
 tile_set = SubResource("TileSet_c6dvc")
 script = ExtResource("5_k24pf")
-WorldLayerData = NodePath("../MainWorld")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
