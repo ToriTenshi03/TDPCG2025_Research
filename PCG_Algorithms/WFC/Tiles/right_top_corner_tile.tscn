@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://4c5ipek3xkoi"]
+
+[ext_resource type="PackedScene" uid="uid://bwr4nnid4n1t0" path="res://PCG_Algorithms/WFC/Tiles/left_corner_tile.tscn" id="1_3beqh"]
+
+[node name="right_top_corner_tile" instance=ExtResource("1_3beqh")]

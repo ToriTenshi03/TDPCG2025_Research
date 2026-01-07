@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1l7vd2fvpm2d"]
+
+[ext_resource type="PackedScene" uid="uid://bwr4nnid4n1t0" path="res://PCG_Algorithms/WFC/Tiles/left_corner_tile.tscn" id="1_6b5md"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6b5md"]
+load_path = "res://.godot/imported/TestResearch32.png-171d9edbba337e8005ec39ece8d70881.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d62k2"]
+atlas = SubResource("CompressedTexture2D_6b5md")
+region = Rect2(224, 0, 32, 32)
+
+[node name="HorizontalStraightTile" instance=ExtResource("1_6b5md")]
+
+[node name="Sprite2D" parent="." index="0"]
+unique_name_in_owner = true
+texture = SubResource("AtlasTexture_d62k2")

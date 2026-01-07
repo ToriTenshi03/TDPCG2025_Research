@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwr4nnid4n1t0"]
+
+[ext_resource type="Script" uid="uid://c0unntvcs3cs" path="res://PCG_Algorithms/WFC/Tile.gd" id="1_ov2gb"]
+[ext_resource type="Texture2D" uid="uid://cqe3h71hsaq80" path="res://assets/TestResearch32.png" id="2_ithwo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00els"]
+atlas = ExtResource("2_ithwo")
+region = Rect2(192, 0, 32, 32)
+
+[node name="left_corner_tile" type="Node2D"]
+script = ExtResource("1_ov2gb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = SubResource("AtlasTexture_00els")
