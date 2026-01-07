@@ -1,10 +1,15 @@
-[gd_scene load_steps=9 format=3 uid="uid://bt5cno0fdrpdy"]
+[gd_scene load_steps=14 format=3 uid="uid://bt5cno0fdrpdy"]
 
 [ext_resource type="Texture2D" uid="uid://cqe3h71hsaq80" path="res://assets/TestResearch32.png" id="1_echbf"]
-[ext_resource type="PackedScene" uid="uid://bwr4nnid4n1t0" path="res://PCG_Algorithms/WFC/Tiles/left_corner_tile.tscn" id="2_ibiss"]
+[ext_resource type="PackedScene" uid="uid://bwr4nnid4n1t0" path="res://PCG_Algorithms/WFC/Tiles/left_top_corner_tile.tscn" id="2_ibiss"]
 [ext_resource type="PackedScene" uid="uid://b1l7vd2fvpm2d" path="res://PCG_Algorithms/WFC/Tiles/horizontal_straight_tile.tscn" id="3_c6dvc"]
+[ext_resource type="PackedScene" uid="uid://4c5ipek3xkoi" path="res://PCG_Algorithms/WFC/Tiles/right_top_corner_tile.tscn" id="3_x537r"]
 [ext_resource type="Script" uid="uid://cgora0f5e0a4q" path="res://scenes/main_scene.gd" id="4_611at"]
+[ext_resource type="PackedScene" uid="uid://bon3qxusw1ayn" path="res://PCG_Algorithms/WFC/Tiles/right_bottom_corner_tile.tscn" id="4_cfq0f"]
 [ext_resource type="Script" uid="uid://b814c7ybppuv0" path="res://scenes/preview_layer.gd" id="5_k24pf"]
+[ext_resource type="PackedScene" uid="uid://44683qfc10c6" path="res://PCG_Algorithms/WFC/Tiles/left_bottom_corner_tile.tscn" id="5_pjux3"]
+[ext_resource type="PackedScene" uid="uid://c01yhn61xlyyw" path="res://PCG_Algorithms/WFC/Tiles/vertical_line_tile.tscn" id="7_o3jky"]
+[ext_resource type="PackedScene" uid="uid://j0j0faol8iab" path="res://PCG_Algorithms/WFC/Tiles/grass_tile.tscn" id="8_cfq0f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ibiss"]
 texture = ExtResource("1_echbf")
@@ -76,7 +81,12 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_c6dvc"]
 scenes/1/scene = ExtResource("2_ibiss")
-scenes/2/scene = ExtResource("3_c6dvc")
+scenes/2/scene = ExtResource("3_x537r")
+scenes/3/scene = ExtResource("4_cfq0f")
+scenes/4/scene = ExtResource("5_pjux3")
+scenes/5/scene = ExtResource("3_c6dvc")
+scenes/7/scene = ExtResource("7_o3jky")
+scenes/8/scene = ExtResource("8_cfq0f")
 
 [sub_resource type="TileSet" id="TileSet_c6dvc"]
 tile_size = Vector2i(32, 32)

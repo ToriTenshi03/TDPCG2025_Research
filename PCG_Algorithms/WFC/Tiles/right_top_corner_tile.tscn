@@ -1,5 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://4c5ipek3xkoi"]
+[gd_scene load_steps=4 format=3 uid="uid://4c5ipek3xkoi"]
 
-[ext_resource type="PackedScene" uid="uid://bwr4nnid4n1t0" path="res://PCG_Algorithms/WFC/Tiles/left_corner_tile.tscn" id="1_3beqh"]
+[ext_resource type="PackedScene" uid="uid://bwr4nnid4n1t0" path="res://PCG_Algorithms/WFC/Tiles/left_top_corner_tile.tscn" id="1_3beqh"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3beqh"]
+load_path = "res://.godot/imported/TestResearch32.png-171d9edbba337e8005ec39ece8d70881.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dw7r2"]
+atlas = SubResource("CompressedTexture2D_3beqh")
+region = Rect2(256, 0, 32, 32)
 
 [node name="right_top_corner_tile" instance=ExtResource("1_3beqh")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = SubResource("AtlasTexture_dw7r2")

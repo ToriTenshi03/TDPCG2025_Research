@@ -2,7 +2,7 @@ class_name Tile
 extends Node
 
 @export_category("Rulesets")
-@export var UpNeighbours:Array[Tile]
-@export var DownNeighbours:Array[Tile]
-@export var RightNeighbours:Array[Tile] 
-@export var LeftNeighbours:Array[Tile] 
+@export var UpNeighbours:Array[int]
+@export var DownNeighbours:Array[int]
+@export var RightNeighbours:Array[int] 
+@export var LeftNeighbours:Array[int] 
